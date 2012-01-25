@@ -1,12 +1,12 @@
 class GTAI extends AIInfo 
  {
    function GetAuthor()      { return "Gleser Sabolc & Turzai Tihomir"; }
-   function GetName()        { return "GT-AI"; }
+   function GetName()        { return "GTAI"; }
    function GetDescription() { return "We should put something insteresting here"; }
    function GetVersion()     { return 1; }
    function GetDate()        { return "2012-01-25"; }
-   function CreateInstance() { return "GT-AI"; }
-   function GetShortName()   { return "GT-AI"; }
+   function CreateInstance() { return "GTAI"; }
+   function GetShortName()   { return "GTAI"; }
    
    function GetSettings() 
    {
