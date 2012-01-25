@@ -1,14 +1,13 @@
 <project name="GTAiProjekt" default="main" basedir=".">
 	
-	<property name="openTTDFolder" value="C:\Program Files\OpenTTD" />
-	<property name="appName" value="GTAi" />
+	<property file="deploy.properties" />
 	
 	<target name="main" depends="deploy">
 	</target>
 	
 	<target name="deploy">
-			<copy todir="${openTTDFolder}/ai/${appName}">
-				<fileset dir="${basedir}" />
+			<copy todir="${openTTDFolder.dir}/ai/${appName}">
+				<fileset dir="${basedir}" includes="**/*.nut"/>				
 			</copy>	
 	</target>
 	
